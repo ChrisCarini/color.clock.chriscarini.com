@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Clock - Chris Carini</title>
+    <script src="clock.js"></script>
+    <script defer src="serviceworker-init.js"></script>
+
+    <!--    &lt;!&ndash; 'classic' theme &ndash;&gt;-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>-->
+    <!--    &lt;!&ndash; 'monolith' theme &ndash;&gt;-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>-->
+    <!-- 'nano' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+</head>
+<body id="body" onload="start_canvas();">
+<div id="hexCode"></div>
+<div id="colorPickerContainer">
+    <div id="colorPicker"></div>
+</div>
+<div id="toggle">
+    <div>ARGB</div>
+    <label class="switch">
+        <input id="toggleInput" type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <div>RGBA</div>
+</div>
+</body>
+</html>
